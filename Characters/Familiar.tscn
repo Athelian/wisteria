@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://bddjt7h8oi55o"]
 
 [ext_resource type="Script" path="res://Characters/Familiar.cs" id="2_5gqv8"]
-[ext_resource type="Texture2D" uid="uid://befc25dw1524w" path="res://assets/open_game_art/walk-imageonline.co-merged (1).png" id="2_5ytow"]
+[ext_resource type="Texture2D" uid="uid://befc25dw1524w" path="res://Assets/open_game_art/walk-imageonline.co-merged (1).png" id="2_5ytow"]
 
 [sub_resource type="Animation" id="Animation_bkxul"]
 length = 0.001

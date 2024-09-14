@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://djg6ylyf3p30l"]
 
 [ext_resource type="Script" path="res://Characters/Familiar.cs" id="1_kkxue"]
-[ext_resource type="Texture2D" uid="uid://lg403ocupn5q" path="res://assets/open_game_art/walk-imageonline.co-merged (1).png" id="2_s8ymt"]
+[ext_resource type="Texture2D" uid="uid://lg403ocupn5q" path="res://Assets/open_game_art/walk-imageonline.co-merged (1).png" id="2_s8ymt"]
 [ext_resource type="PackedScene" uid="uid://cb688eqt6do1g" path="res://UI/Inventory.tscn" id="3_6bpre"]
 
 [sub_resource type="Animation" id="Animation_bkxul"]

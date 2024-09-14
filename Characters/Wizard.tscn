@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://o8ajuf4n0fdc"]
 
-[ext_resource type="Texture2D" uid="uid://dap5epi1ilwsx" path="res://assets/open_game_art/purplecloakwizard.png" id="1_6uaoq"]
+[ext_resource type="Texture2D" uid="uid://dap5epi1ilwsx" path="res://Assets/open_game_art/purplecloakwizard.png" id="1_6uaoq"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2ai36"]
 radius = 25.0

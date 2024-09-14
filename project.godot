@@ -13,7 +13,7 @@ config_version=5
 config/name="Legend of Fogwyn"
 run/main_scene="res://Environment/Field.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
-config/icon="res://assets/open_game_art/icon.svg"
+config/icon="res://Assets/open_game_art/icon.svg"
 
 [display]
 

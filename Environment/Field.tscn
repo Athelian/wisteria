@@ -1,9 +1,9 @@
 [gd_scene load_steps=17 format=4 uid="uid://dgkk4pow6oovv"]
 
-[ext_resource type="Texture2D" uid="uid://coh6hp6uyyx44" path="res://assets/kenney_tiny-town/Tilemap/tilemap_packed.png" id="1_b8p1f"]
-[ext_resource type="Texture2D" uid="uid://b1kyp01ounfx3" path="res://assets/kenney_tiny-town/Tilemap/tilemap.png" id="2_fyxnx"]
+[ext_resource type="Texture2D" uid="uid://coh6hp6uyyx44" path="res://Assets/kenney_tiny-town/Tilemap/tilemap_packed.png" id="1_b8p1f"]
+[ext_resource type="Texture2D" uid="uid://b1kyp01ounfx3" path="res://Assets/kenney_tiny-town/Tilemap/tilemap.png" id="2_fyxnx"]
 [ext_resource type="PackedScene" uid="uid://bge0r02rdn484" path="res://Objects/Item.tscn" id="3_s4gwp"]
-[ext_resource type="Texture2D" uid="uid://d53l0qy5wt72" path="res://assets/open_game_art/apple.png" id="4_7sdct"]
+[ext_resource type="Texture2D" uid="uid://d53l0qy5wt72" path="res://Assets/open_game_art/apple.png" id="4_7sdct"]
 [ext_resource type="PackedScene" uid="uid://bddjt7h8oi55o" path="res://Characters/Familiar.tscn" id="5_3syjt"]
 [ext_resource type="PackedScene" uid="uid://o8ajuf4n0fdc" path="res://Characters/Wizard.tscn" id="6_jdvkb"]
 [ext_resource type="PackedScene" uid="uid://cb688eqt6do1g" path="res://UI/Inventory.tscn" id="7_pjw0p"]
