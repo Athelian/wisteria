@@ -1,9 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhi6abt56n5y"]
+[gd_scene format=3 uid="uid://bhi6abt56n5y"]
 
-[ext_resource type="Script" path="res://Characters/Familiar.cs" id="1_kkxue"]
-[ext_resource type="PackedScene" uid="uid://cb688eqt6do1g" path="res://UI/Inventory.tscn" id="3_6bpre"]
+[node name="Character" type="Node2D"]
 
-[node name="Character" type="CharacterBody2D"]
-script = ExtResource("1_kkxue")
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
 
-[node name="Inventory" parent="." instance=ExtResource("3_6bpre")]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]

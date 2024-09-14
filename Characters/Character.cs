@@ -5,12 +5,13 @@ using Godot;
 public abstract partial class Character : CharacterBody2D
 {
     [Export] public int Speed { get; set; } = 300;
+    [Export] private NodePath AnimationPlayerPath;
     public AnimationPlayer animationPlayer;
     public List<Item> inventory = new List<Item>();
 
     public override void _Ready()
     {
-        animationPlayer = GetNode<AnimationPlayer>("./Sprite2D/AnimationPlayer");
+        animationPlayer = GetNode<AnimationPlayer>(AnimationPlayerPath);
         animationPlayer.Play("idle");
     }
 
