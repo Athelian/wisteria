@@ -1,16 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://o8ajuf4n0fdc"]
+[gd_scene load_steps=7 format=3 uid="uid://o8ajuf4n0fdc"]
 
 [ext_resource type="Texture2D" uid="uid://cojhglyyplrfc" path="res://Assets/open_game_art/purplecloakwizard.png" id="1_6uaoq"]
+[ext_resource type="Script" path="res://Characters/Wizard.cs" id="1_yyuyu"]
+
+[sub_resource type="Animation" id="Animation_buxfa"]
+resource_name = "idle"
+
+[sub_resource type="Animation" id="Animation_rudi6"]
+resource_name = "run"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7wsck"]
+_data = {
+"idle": SubResource("Animation_buxfa"),
+"run": SubResource("Animation_rudi6")
+}
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2ai36"]
 radius = 25.0
 
 [node name="Wizard" type="CharacterBody2D"]
+script = ExtResource("1_yyuyu")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(3.125, 3.125)
 texture = ExtResource("1_6uaoq")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite2D"]
+libraries = {
+"": SubResource("AnimationLibrary_7wsck")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, 21)

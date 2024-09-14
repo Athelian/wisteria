@@ -25,16 +25,8 @@ public partial class CharacterPlayer : Character
         Vector2 inputDirection = Input.GetVector("left", "right", "up", "down");
         Velocity = inputDirection * Speed;
 
-        if (inputDirection != Vector2.Zero)
-        {
-            animationPlayer.Play("run");
-        }
-        else
-        {
-            animationPlayer.Play("idle");
-        }
-
         MoveAndSlide();
+        AfterPhysics();
     }
 
     public override void AddToInventory(Item item)

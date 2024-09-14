@@ -4,14 +4,26 @@ using Godot;
 
 public abstract partial class Character : CharacterBody2D
 {
-    [Export] public int Speed { get; set; } = 400;
+    [Export] public int Speed { get; set; } = 300;
     public AnimationPlayer animationPlayer;
     public List<Item> inventory = new List<Item>();
 
     public override void _Ready()
     {
-        animationPlayer = GetNode<AnimationPlayer>("./Sprite2D/Animation");
+        animationPlayer = GetNode<AnimationPlayer>("./Sprite2D/AnimationPlayer");
         animationPlayer.Play("idle");
+    }
+
+    public void AfterPhysics()
+    {
+        if (Velocity != Vector2.Zero)
+        {
+            animationPlayer.Play("run");
+        }
+        else
+        {
+            animationPlayer.Play("idle");
+        }
     }
 
     public virtual void AddToInventory(Item item)
