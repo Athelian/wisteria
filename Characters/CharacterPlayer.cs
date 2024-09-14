@@ -10,6 +10,7 @@ public partial class CharacterPlayer : Character
         base._Ready();
         inventoryUI = GetNode<CanvasLayer>(inventoryUIPath);
         inventoryUI.Visible = false;
+        UpdateInventoryUI();
     }
 
     public override void _Input(InputEvent @event)
