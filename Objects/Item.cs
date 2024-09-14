@@ -17,15 +17,12 @@ public partial class Item : Area2D
 #if DEBUG
         if (sprite == null)
         {
-            GD.PrintErr("Warning: Sprite2D node not found. Proceeding without it.");
-            sprite = GD.Load<Sprite2D>("res://DevUtils/Fallbacks/Sprite2D.tscn");
-            // throw new Exception("Critical error: Sprite2D node not found.");
+            throw new Exception("Critical error: Sprite2D node not found.");
         }
 #else
         if (sprite == null)
         {
-            GD.PrintErr("Warning: Sprite2D node not found. Proceeding without it.");
-            sprite = GD.Load("res://DevUtils/Fallbacks/Sprite2D.tscn") as Sprite2D;
+            GD.Print("Critical error: Sprite2D node not found.");
         }
 #endif
     }
