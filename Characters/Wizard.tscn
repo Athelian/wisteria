@@ -17,16 +17,16 @@ _data = {
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2ai36"]
-radius = 25.0
+radius = 7.5551
 
-[node name="Wizard" type="CharacterBody2D"]
+[node name="Wizard" type="CharacterBody2D" groups=["interactable"]]
 script = ExtResource("1_yyuyu")
 AnimationPlayerPath = NodePath("CharacterNPC/Character/Sprite2D/AnimationPlayer")
 
 [node name="CharacterNPC" parent="." instance=ExtResource("2_m4vd2")]
 
 [node name="Sprite2D" parent="CharacterNPC/Character" index="0"]
-scale = Vector2(3.125, 3.125)
+scale = Vector2(2.01916, 2.01916)
 texture = ExtResource("1_6uaoq")
 
 [node name="AnimationPlayer" parent="CharacterNPC/Character/Sprite2D" index="0"]
@@ -34,8 +34,9 @@ libraries = {
 "": SubResource("AnimationLibrary_el7rc")
 }
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 21)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["interactable"]]
+position = Vector2(-2, 15)
+scale = Vector2(1.89512, 1.89512)
 shape = SubResource("CircleShape2D_2ai36")
 
 [editable path="CharacterNPC"]

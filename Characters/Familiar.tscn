@@ -4,9 +4,6 @@
 [ext_resource type="Texture2D" uid="uid://befc25dw1524w" path="res://Assets/open_game_art/walk-imageonline.co-merged (1).png" id="2_5ytow"]
 [ext_resource type="PackedScene" uid="uid://c0ndscmwjvgar" path="res://Characters/CharacterPlayer.tscn" id="4_jibre"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_sj7nu"]
-radius = 15.0333
-
 [sub_resource type="Animation" id="Animation_km4cl"]
 length = 0.001
 tracks/0/type = "value"
@@ -47,13 +44,13 @@ _data = {
 "run": SubResource("Animation_ig7sk")
 }
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_sj7nu"]
+radius = 15.0333
+
 [node name="Familiar" type="CharacterBody2D"]
 script = ExtResource("2_5gqv8")
+spritePath = NodePath("CharacterPlayer/Character/Sprite2D")
 AnimationPlayerPath = NodePath("CharacterPlayer/Character/Sprite2D/AnimationPlayer")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 15)
-shape = SubResource("CircleShape2D_sj7nu")
 
 [node name="CharacterPlayer" parent="." instance=ExtResource("4_jibre")]
 
@@ -67,6 +64,10 @@ vframes = 4
 libraries = {
 "": SubResource("AnimationLibrary_ejub2")
 }
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 15)
+shape = SubResource("CircleShape2D_sj7nu")
 
 [editable path="CharacterPlayer"]
 [editable path="CharacterPlayer/Character"]

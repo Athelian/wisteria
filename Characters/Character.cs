@@ -4,7 +4,7 @@ using Godot;
 
 public abstract partial class Character : CharacterBody2D
 {
-    [Export] public int Speed { get; set; } = 300;
+    [Export] public int Speed { get; set; } = 100;
     [Export] private NodePath AnimationPlayerPath;
     public AnimationPlayer animationPlayer;
     public List<Item> inventory = new List<Item>();
