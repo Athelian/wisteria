@@ -643,7 +643,8 @@ texture = ExtResource("1_b8p1f")
 11:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_6x1qr"]
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 3
+physics_layer_0/collision_mask = 3
 sources/0 = SubResource("TileSetAtlasSource_dljij")
 
 [node name="Field" type="Node2D"]
@@ -678,12 +679,14 @@ texture = ExtResource("4_7sdct")
 [node name="Characters" type="Node2D" parent="."]
 
 [node name="Familiar" parent="Characters" instance=ExtResource("5_3syjt")]
+z_index = 1
 position = Vector2(296, 310)
 inventoryUIPath = NodePath("../../UI/Inventory")
 
 [node name="Wizard" parent="Characters" instance=ExtResource("6_jdvkb")]
 position = Vector2(648, 317)
 scale = Vector2(1.35766, 1.35766)
+collision_mask = 2
 
 [node name="UI" type="Node2D" parent="."]
 

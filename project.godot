@@ -17,6 +17,7 @@ config/icon="res://Assets/open_game_art/icon.svg"
 
 [display]
 
+window/size/initial_position_type=2
 window/stretch/aspect="expand"
 
 [dotnet]
